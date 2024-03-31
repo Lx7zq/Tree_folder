@@ -1,0 +1,35 @@
+/* style.css */
+
+.tree {
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.selected {
+    background-color: lightblue;
+}
+
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder-icon.png'); /* ใส่ url รูปไอคอนโฟลเดอร์ที่ต้องการแสดง */
+}
+
+.file::before {
+    background-image: url('file-icon.png'); /* ใส่ url รูปไอคอนไฟล์ที่ต้องการแสดง */
+}
